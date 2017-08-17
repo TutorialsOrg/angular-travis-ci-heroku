@@ -1,8 +1,7 @@
 language: node_js
 node_js:
   - "6"
-before_install: 
-  - wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+before_install:
   - npm install -g @angular-cli
 install: npm install
 #before_script: npm install -g angular-cli

@@ -13,4 +13,4 @@ branches:
   - master
 after_script: 
   - chmod +x heroku_deploy.sh
-  - ./heorku_deploy.sh
+  - ./heroku_deploy.sh

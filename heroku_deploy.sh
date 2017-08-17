@@ -13,7 +13,9 @@
 cd dist/;
 git init;
 git config user.name "preetham" && git config user.email "preetham.salehundam@gmail.com";
+git remote add origin git@github.com:TutorialsOrg/angular-travis-ci-heroku.git
 git add .;
 git commit -m "github page code"
-git subtree push --prefix dist origin gh-pages
+#git push origin gh-pages
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
 

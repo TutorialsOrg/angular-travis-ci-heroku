@@ -13,7 +13,7 @@
 cd dist/;
 git init;
 git config user.name "preetham" && git config user.email "preetham.salehundam@gmail.com";
-git remote add origin git@github.com:TutorialsOrg/angular-travis-ci-heroku.git
+#git remote add origin git@github.com:TutorialsOrg/angular-travis-ci-heroku.git
 git add .;
 git commit -m "github page code"
 #git push origin gh-pages

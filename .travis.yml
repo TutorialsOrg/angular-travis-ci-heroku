@@ -9,7 +9,7 @@ branches:
   - master
 after_script:
 - chmod +x heroku_deploy.sh
-- "./heroku_deploy.sh"
+- ./heroku_deploy.sh
 deploy:
   provider: heroku
   api_key:

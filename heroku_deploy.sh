@@ -10,4 +10,10 @@
 # git add .;
 # git commit -m "heroku commit";
 # git push heroku master
+cd dist/;
+git init;
+git config user.name "preetham" && git config user.email "preetham.salehundam@gmail.com";
+git add .;
+git commit -m "github page code"
+git subtree push --prefix dist origin gh-pages
 

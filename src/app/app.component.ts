@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tour of heroes';
-  hero: Hero = { id: 1, name: 'Windstorm' };
+  hero: Hero = { id: 1, name: 'surya' };
 }
 export class Hero {
   id: number;

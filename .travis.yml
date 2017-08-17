@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - "6"
+- '6'
 before_install:
-  - npm install -g @angular/cli
+- npm install -g @angular/cli
 install: npm install
-#before_script: npm install -g angular-cli
-#refer package.json for postinstall script
-#script: npm run build
 branches:
   only:
   - master
-after_script: 
-  - chmod +x heroku_deploy.sh
-  - ./heroku_deploy.sh
+after_script:
+- chmod +x heroku_deploy.sh
+- "./heroku_deploy.sh"
+deploy:
+  api_key:
+    secure: PLWVtli985Pr3tIQpKwm4YiM7wTmif/mNUv+6nFtC8yp5qWto3CRYoQaa3ZxoDzgYTY230liPNKuY1+zS8Ugh991jcV6v3VKgKujZHgBbAoTEsghCY74q5x5DqoVaJm3qVvYlyf1RzSJRSqmyfmz8ZWyGYs8dWJ3lOvZcIqqF29+U4Md1JEsjRnZdpkpOPEZkx5K+Z2LvEkiDM31QlgWXRTWHb0T4R6U4X4bCFdVE5QuQB8uAJV/DDYmRArOvpey0y3zspHQuO/b+INkG3Kolb0xxnWwNRxVX3UEiT7MCUWr5H7BnjhrRUz01i1xmKNebjUPOhufaCf2Is18uRFv44Cfk2B1G7y6b+j7c8XiAQDybju0+A3aiMfAko41jSIImmNH8nPL9YXRBblp/sb+7Rvlty5jDdjJDsq8bsvl4rgVQLAH60F8UnRr3WyLPVOYAGyyjSfOymRU5Ck3/zPEWEFcC40isyQACKWZ1ZvnfltDfdviBqLuL7LaUTJYL21LOMzFf8kmPnd+D0YCusjnHGuApO0jXO1nWYQxH0HHHsdNX51krl4aj68xM7dzSUm2ksBmXcPiSPARB2HnIfDfMoMBB7HTegXJgFAncEr8TWa72U2mLxoV6EifovvuywmFnVv6OIamwyTUv5tamoq7n52m84TS0Cc+445hOjOqOoQ=

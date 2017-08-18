@@ -8,8 +8,7 @@ branches:
   only:
   - master
 after_script:
-- chmod +x heroku_deploy.sh
-- ./heroku_deploy.sh
+- chmod +x publish-gh-pages.sh && ./publish-gh-pages.sh
 deploy:
   provider: heroku
   api_key:

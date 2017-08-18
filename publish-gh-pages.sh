@@ -10,6 +10,7 @@
 # git add .;
 # git commit -m "heroku commit";
 # git push heroku master
+ng build -bh angular-travis-ci-heroku --aot -prod 
 cd dist/;
 git init;
 git config user.name "preetham" && git config user.email "preetham.salehundam@gmail.com";

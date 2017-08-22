@@ -9,7 +9,6 @@ app.use(express.static(__dirname + '/dist'));
 // Start the app by listening on the default
 // Heroku port
 
-// ...
 // For all GET requests, send back index.html
 // so that PathLocationStrategy can be used
 app.get('/*', function(req, res) {

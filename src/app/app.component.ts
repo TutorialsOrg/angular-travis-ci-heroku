@@ -6,10 +6,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tour of heroes';
-  hero: Hero = { id: 1, name: 'surya' };
+  title = 'Continous deployment with Travis CI and Heroku';
+  TechStack: Technology[] = [{
+    id: 1,
+    name: 'Angular',
+    category: 'Web'
+  }, {
+    id: 2,
+    name: 'NodeJS',
+    category: 'Web'
+  }, {
+    id: 3,
+    name: 'GITHUB',
+    category: 'CVS'
+  }, {
+    id: 4,
+    name: 'Travis-CI',
+    category: 'Continous Integration'
+  }, {
+    id: 5,
+    name: 'Heroku',
+    category: 'Cloud Provider'
+  }];
+  orderProduct = new Array([1, 2, 3]);
+  addProduct(orderProduct: Array<number>) {
+this.orderProduct.push(orderProduct);
+console.log(this.orderProduct);
+  }
 }
-export class Hero {
+export class Technology {
   id: number;
   name: string;
+  category: string;
 }

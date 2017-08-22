@@ -12,7 +12,15 @@
   </li>
 </ul>
  -->
-<h1>{{title}}</h1>
+ <div>
+ <ul *ngFor="let tech of TechStack">
+   <legend>{{tech.category}}</legend>
+   <li>{{tech.name}}</li>
+  
+ </ul>
+</div>
+<input type="button" [(ngModel)]="orderProduct" value="click" (click)="addProduct(orderProduct)" />
+<!-- <h1>{{title}}</h1>
 <h2>{{hero.name}} details!</h2>
 <div><label>id: </label>{{hero.id}}</div>
-<div><label>name: </label>{{hero.name}}</div>
+<div><label>name: </label>{{hero.name}}</div> -->

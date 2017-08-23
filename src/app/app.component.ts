@@ -28,11 +28,6 @@ export class AppComponent {
     name: 'Heroku',
     category: 'Cloud Provider'
   }];
-  orderProduct = new Array([1, 2, 3]);
-  addProduct(orderProduct: Array<number>) {
-this.orderProduct.push(orderProduct);
-console.log(this.orderProduct);
-  }
 }
 export class Technology {
   id: number;
